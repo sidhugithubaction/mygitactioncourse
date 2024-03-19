@@ -1,6 +1,8 @@
 name: First Workflow
 on:
-    - push
+  push: 
+    branches: 
+      - main
 
 jobs:
     run-shell-commands:
@@ -12,4 +14,20 @@ jobs:
               run: |
                 node -v
                 npm -v
+    
+    parallel_jobs:
+      runs-on: macos-latest
+      steps:
+        - name: MACOS spec command
+          run: sw_vers
+      needs: 
+        - run-shell-commands
+
+    parallel_job_two:
+      runs-on: windows-latest
+      steps:
+        - name: Windows SPEC command
+          run: dir
+      needs: 
+        - run-shell-commands
 
