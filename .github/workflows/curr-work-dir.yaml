@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Step1
         run: |
-          ll
+          ls -l
           echo $HOSTNAME
           date +"%d-%m-%Y-%H:%M:%S-%B-%A"
+    needs: 
+      - new_job
