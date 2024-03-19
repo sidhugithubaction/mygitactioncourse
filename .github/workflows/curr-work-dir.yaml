@@ -23,9 +23,14 @@ jobs:
           echo $GITHUB_WORKSPACE
   second_job:
     runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: ./sidhu
+        shell: bash
     steps:
       - name: Step1
         run: |
+          pwd
           ls -l
           echo $HOSTNAME
           date +"%d-%m-%Y-%H:%M:%S-%B-%A"
