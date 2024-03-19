@@ -1,0 +1,14 @@
+name: second-WF
+on: 
+  push: 
+    branches: 
+      - main
+
+jobs:
+  firstjob:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: First step
+        run: echo "Hey sidhu"
+      - name: Second step
+        run: echo "Hello"
