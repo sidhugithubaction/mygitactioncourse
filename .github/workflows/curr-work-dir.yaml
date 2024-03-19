@@ -1,17 +1,26 @@
-name: get-curr-wd
+name: get-current-directory
 on:
   push:
     branches: 
       - main
 
 jobs:
-  cwd_job:
+  new_job:
     runs-on: ubuntu-22.04
     steps:
-      - name: ubuntusteps
+      - name: Step1
         run: |
-          pwd
+          ls
           ls -a
+          pwd
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
+  second_job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Step1
+        run: |
+          ll
+          echo $HOSTNAME
+          date +"%d-%m-%Y-%H:%M:%S-%B-%A"
