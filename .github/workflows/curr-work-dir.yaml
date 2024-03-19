@@ -13,5 +13,5 @@ jobs:
           pwd
           ls -a
           echo $GITHUB_SHA
-          echo $GITHUb_REPOSITORY
+          echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
