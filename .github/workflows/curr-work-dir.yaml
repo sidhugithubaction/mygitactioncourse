@@ -1,0 +1,17 @@
+name: get-curr-wd
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  cwd_job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: ubuntusteps
+        run: |
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUb_REPOSITORY
+          echo $GITHUB_WORKSPACE
