@@ -1,8 +1,14 @@
 name: TestingEvents
 on:
-  - push
-  - pull_request
-  - issues
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+  issues:
+    types:
+      - opened
 jobs:
   jobone:
     runs-on: ubuntu-22.04
