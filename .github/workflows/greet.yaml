@@ -1,0 +1,21 @@
+name: greet
+on:
+  push:
+    branches: 
+      - main
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  greet_job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Greet
+        id: greet
+        uses: actions/hello-world-javascript-action@main
+        with:
+          who-to-greet: Sidhu
+      - name: Log greet time
+        run: echo "${{ steps.greet.outputs.time }}"
