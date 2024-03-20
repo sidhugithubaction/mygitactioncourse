@@ -19,6 +19,7 @@ on:
         required: true
         type: string
 
+run-name: "Expressions and Context by @${{ github.actor }}, Event is : ${{ github.event_name }}, ${{ github.ref_name }}"
 
 defaults:
   run:
@@ -29,6 +30,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
+      - run: ls -a
   sidhu_job:
     runs-on: ubuntu-22.04
     steps:
