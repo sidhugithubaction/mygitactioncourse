@@ -7,7 +7,7 @@ jobs:
   jobone:
     runs-on: ubuntu-22.04
     steps:
-      - name: print few
+      - name: print few VARS
         run: |
           echo $GITHUB_SHA
           echo $GITHUB_REF
