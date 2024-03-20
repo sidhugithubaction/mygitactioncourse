@@ -28,7 +28,8 @@ defaults:
 jobs:
   checkout_job:
     runs-on: ubuntu-22.04
-    steps:
+    if: contains(fromJson('["issues", "pull_request"]'), github.event_name) || github.event_name == 'push'
+    steps:      
       - uses: actions/checkout@v4
       - run: ls -a
   sidhu_job:
