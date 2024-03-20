@@ -1,0 +1,43 @@
+name: Manually-Triggered
+on:
+  workflow_dispatch: 
+    inputs:
+      place:
+        required: true
+        type: string
+        default: Tirupati
+      kms:
+        required: true
+        type: number
+        default: 120
+      Means_of_transport:
+        required: true
+        default: Bus
+        type: choice
+        options:
+          - Bus
+          - Train
+          - Flight
+      Is_that_a_Place:
+        type: boolean
+        default: true
+        required: true
+      which_env:
+        type: environment
+        default: testing
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  SampleJOb:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: |
+          echo -e "\033[1;32mPlace : ${{ inputs.place }}\033[0m"
+          echo -e "\033[1;33mKilometers : ${{ inputs.kms }}\033[0m"
+          echo -e "\033[1;34mTransport : ${{ inputs.Means_of_transport }}\033[0m"
+          echo -e "\033[1;35mIsthataPlace? : ${{ inputs.Is_that_a_Place }}\033[0m"
+          echo -e "\033[1;36mEnvironment : ${{ inputs.which_env }}\033[0m"
+          
