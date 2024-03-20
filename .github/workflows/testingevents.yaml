@@ -1,0 +1,15 @@
+name: TestingEvents
+on:
+  - push
+  - pull_request
+  - issues
+jobs:
+  jobone:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: print few
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REF
+      - name: checkout-now
+        uses: actions/checkout@v4
