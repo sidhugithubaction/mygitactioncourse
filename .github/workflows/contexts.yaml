@@ -1,0 +1,40 @@
+name: Contexts
+on:
+  push:
+    branches: 
+      - main
+
+  pull_request:
+    branches: 
+      - main 
+
+  issues: 
+    types: 
+      - opened
+
+  workflow_dispatch:
+    inputs:
+      Sidhu:
+        default: boy
+        required: true
+        type: string
+
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  checkout_job:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+  sidhu_job:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: |
+          echo '${{ toJson(github) }}'
+          echo '${{ toJson(job) }}'
+          echo '${{ toJson(secrets) }}'
+          echo '${{ toJson(steps) }}'
+          echo '${{ toJson(runner) }}'
