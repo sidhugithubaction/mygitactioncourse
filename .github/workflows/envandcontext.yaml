@@ -1,0 +1,24 @@
+name: ENVandContexts
+on:
+  push:
+    branches: 
+      - main
+  pull_request: 
+    branches: 
+      - main
+
+run-name: "Logging ENV and CONTEXT : Triggerer: ${{ github.actor }}, Branch : ${{ github.ref_name }}, Event: ${{ github.event_name }}"
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  ENVjob:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "${GITHUB_REF}"
+  ContextJob:
+    runs-on: ubuntu-18.04
+    steps:
+      - run: echo "${{ github.ref }}"
