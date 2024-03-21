@@ -1,0 +1,18 @@
+name: RunningEnvVar
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  first_job:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "NEW_DATE=$(date)" >> "$GITHUB_ENV"
+
+  second_job:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "$NEW_DATE"
+    needs: 
+      - first_job
