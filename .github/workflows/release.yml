@@ -55,8 +55,8 @@ jobs:
         with:
           images: sidhusaiprasanth/testapp
           tags: |
-            type=semver,pattern={{version}},value=$IMG_VERSION
-            type=semver,pattern={{major}}.{{minor}},value=$IMG_VERSION
+            type=semver,pattern={{version}},value=${{ env.IMG_VERSION }}
+            type=semver,pattern={{major}}.{{minor}},value=${{ env.IMG_VERSION }}
       - name: Build and publish
         uses: docker/build-push-action@v5
         with:
