@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v1.4.0...v2.0.0) (2024-03-22)
+
+
+### Features
+
+* added pull origin main ([d8d4abd](https://github.com/sidhugithubaction/mygitactioncourse/commit/d8d4abd5f1ae4538cc6c96f8a238313da20ba04a))
+
+
+### BREAKING CHANGES
+
+* added pull origin main
+
 # [1.4.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v1.3.0...v1.4.0) (2024-03-22)
 
 
