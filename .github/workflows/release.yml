@@ -38,10 +38,14 @@ jobs:
   docker-push-job:
     runs-on: ubuntu-22.04
     needs: release-job
+    
     steps:
       - uses: actions/checkout@v4
       - run: |
+          git pull origin main
+      - run: |
           echo "IMG_VERSION=$(cat package.json | grep version | tr -d ' ' | cut -d ':' -f 2 | tr -d '"' | tr -d ',')" >> "$GITHUB_ENV"
+      
       - name: Login to Docker hub
         uses: docker/login-action@v3
         with:
