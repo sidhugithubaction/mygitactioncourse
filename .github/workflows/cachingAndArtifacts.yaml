@@ -11,6 +11,15 @@ jobs:
 
       - name: Checkout Gitrepo
         uses: actions/checkout@v4
+      - name: CacheNodeModules
+        id: cache-dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: CacheNodeModules
+      - name: Display-Cache-output
+        run: |
+          echo "${{ toJson(steps.cache-dependencies.outputs) }}"
       - name: Setup-Node-Verison
         uses: actions/setup-node@v4
         with:
