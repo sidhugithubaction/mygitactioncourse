@@ -18,7 +18,10 @@ jobs:
     steps:
       - name: step1
         if: vars.VAR1 == 'variable1'
+        timeout-minutes: 1
+        
         run: |
+          sleep 120
           echo "Hello world"
           echo "${{ env.NAME }}"
   job2:
