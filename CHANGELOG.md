@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v2.0.1...v2.1.0) (2024-03-22)
+
+
+### Features
+
+*  added echo again ([7106701](https://github.com/sidhugithubaction/mygitactioncourse/commit/710670160fe0442a18c1d2d9ae904b10b4af80fa))
+
 ## [2.0.1](https://github.com/sidhugithubaction/mygitactioncourse/compare/v2.0.0...v2.0.1) (2024-03-22)
 
 
