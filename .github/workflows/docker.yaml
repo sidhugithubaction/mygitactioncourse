@@ -17,4 +17,4 @@ jobs:
       - run: |
           node -v
           cat /etc/os-release
-          echo "$API-URL"
+          echo $API-URL
