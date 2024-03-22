@@ -1,0 +1,20 @@
+name: DockerYaml
+on:
+  workflow_dispatch
+
+run-name: "Runs Docker Container, Triggerer: ${{ github.actor }}, Event: ${{ github.event_name }}"
+
+jobs:
+  docker_job:
+    runs-on: ubuntu-22.04
+    container: 
+      image: node:21-alpine3.18
+      env:
+        API-URL: sidhusaiprasanth.com
+      ports:
+        - 80
+    steps:
+      - run: |
+          node -v
+          cat /etc/os-release
+          echo "$API-URL"
