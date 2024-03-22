@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v1.0.0...v1.1.0) (2024-03-22)
+
+
+### Features
+
+* adding new changes ([666180b](https://github.com/sidhugithubaction/mygitactioncourse/commit/666180b8cc97f82b13c3c7936f2a22f89850f798))
+
 # 1.0.0 (2024-03-22)
 
 
