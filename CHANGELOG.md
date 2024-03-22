@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v1.1.0...v1.2.0) (2024-03-22)
+
+
+### Features
+
+* added neewwww ([92d7acb](https://github.com/sidhugithubaction/mygitactioncourse/commit/92d7acb645de38814d6bca3a57d0b42ede5e2f42))
+
 # [1.1.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v1.0.0...v1.1.0) (2024-03-22)
 
 
