@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/sidhugithubaction/mygitactioncourse/compare/v3.0.1...v3.0.2) (2024-03-22)
+
+
+### Bug Fixes
+
+* fixed few bugs ([b7f7479](https://github.com/sidhugithubaction/mygitactioncourse/commit/b7f7479274207863fd1ffd5e06944d396237fcc4))
+
 ## [3.0.1](https://github.com/sidhugithubaction/mygitactioncourse/compare/v3.0.0...v3.0.1) (2024-03-22)
 
 
