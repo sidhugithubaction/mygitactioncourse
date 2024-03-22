@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v2.1.0...v3.0.0) (2024-03-22)
+
+
+### Features
+
+* sunny added ([9a4e34a](https://github.com/sidhugithubaction/mygitactioncourse/commit/9a4e34adfae1cb40a714bd1a7c88b46d27e344d9))
+
+
+### BREAKING CHANGES
+
+* Sunny added
+
 # [2.1.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v2.0.1...v2.1.0) (2024-03-22)
 
 
