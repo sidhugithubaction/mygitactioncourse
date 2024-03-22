@@ -29,8 +29,16 @@ jobs:
           node-version: 18
       - run: |
           npm ci
-      # - run: |
-      #     npm test
+      - name: Run tests
+        run: |
+          npm test
+      - name: Upload Code Coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CodeCoverage
+          path: coverage
+          retention-days: 10
       - name: Install Dependencies
         run: npm install
       - name: Use Axios
