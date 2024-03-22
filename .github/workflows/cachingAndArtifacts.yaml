@@ -1,0 +1,30 @@
+name: CachingAndArtifacts
+on:
+  workflow_dispatch
+
+run-name: "Caching And Artifacts , Triggered by ${{ github.actor }}, Event: ${{ github.event_name }}"
+
+jobs:
+  first_Job:
+    runs-on: ubuntu-22.04
+    steps:
+
+      - name: Checkout Gitrepo
+        uses: actions/checkout@v4
+      - name: Setup-Node-Verison
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - run: |
+          npm ci
+      - run: |
+          npm test
+      - name: Install Dependencies
+        run: npm install
+      - name: Use Axios
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const 'axios' = require('axios');
+            const res = await axios('https://icanhazdadjoke.com/', { headers: { Accept: 'text/plain' }})
+            console.log(res.data)
