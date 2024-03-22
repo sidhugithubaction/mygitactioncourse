@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v1.3.0...v1.4.0) (2024-03-22)
+
+
+### Features
+
+* new taggggg ([a42eb43](https://github.com/sidhugithubaction/mygitactioncourse/commit/a42eb43aa2e9d21e3bf0cbe5a3f2935e092034b6))
+
 # [1.3.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v1.2.0...v1.3.0) (2024-03-22)
 
 
