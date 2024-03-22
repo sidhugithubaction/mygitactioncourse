@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/sidhugithubaction/mygitactioncourse/compare/v3.0.0...v3.0.1) (2024-03-22)
+
+
+### Bug Fixes
+
+* sending to ghcr repo also ([ba4c198](https://github.com/sidhugithubaction/mygitactioncourse/commit/ba4c198cbcef588875582d4913810c9cb1b105a2))
+
 # [3.0.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v2.1.0...v3.0.0) (2024-03-22)
 
 
