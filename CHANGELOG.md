@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v1.2.0...v1.3.0) (2024-03-22)
+
+
+### Features
+
+* congrats ([ea0a440](https://github.com/sidhugithubaction/mygitactioncourse/commit/ea0a440f9111429ed5779ea400a17cc5d66b9cfa))
+
 # [1.2.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v1.1.0...v1.2.0) (2024-03-22)
 
 
