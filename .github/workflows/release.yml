@@ -94,7 +94,7 @@ jobs:
         env:
           IMG_VERSION: ${{ env.IMG_VERSION }}
         with:
-          images: ${{ github.actor }}/${{ env.IMAGE_NAME }}
+          images: ${{ secrets.DOCKER_USERNAME }}/ghactionspractice
           tags: |
             type=semver,pattern={{version}},value=${{ env.IMG_VERSION }}
             type=semver,pattern={{major}}.{{minor}},value=${{ env.IMG_VERSION }}
