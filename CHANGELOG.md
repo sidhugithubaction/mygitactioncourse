@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/sidhugithubaction/mygitactioncourse/compare/v2.0.0...v2.0.1) (2024-03-22)
+
+
+### Bug Fixes
+
+* Removed echo ([887b4bf](https://github.com/sidhugithubaction/mygitactioncourse/commit/887b4bfbc61fa4d2e82b08abd98722b3ba16cbce))
+
 # [2.0.0](https://github.com/sidhugithubaction/mygitactioncourse/compare/v1.4.0...v2.0.0) (2024-03-22)
 
 
