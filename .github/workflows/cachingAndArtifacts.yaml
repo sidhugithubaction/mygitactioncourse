@@ -16,7 +16,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.npm
-          key: CacheNodeModules
+          key: ${{ runner.os }}-CacheNodeModules-${{ hashFiles('* */package-lock.json')}}
+          restore-keys: |
+            ${{ runner.os }}-CacheNodeModules-
+
       - name: Display-Cache-output
         run: |
           echo "${{ toJson(steps.cache-dependencies.outputs) }}"
