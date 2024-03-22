@@ -1,0 +1,30 @@
+name: EnvAndVars
+on:
+  push:
+    branches: 
+      - main
+
+env:
+  NAME: Sidhu
+defaults:
+  run:
+    shell: bash
+
+run-name: "Triggered by : ${{ github.actor }}"
+
+jobs:
+  job1:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: step1
+        if: vars.VAR1 == 'variable1'
+        run: |
+          echo "Hello world"
+          echo "${{ env.NAME }}"
+  job2:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: step2
+        if: vars.VAR2 == 'variable2'
+        run: |
+          echo "${{ vars.VAR2 }}"
