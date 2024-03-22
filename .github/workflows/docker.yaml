@@ -10,11 +10,11 @@ jobs:
     container: 
       image: node:21-alpine3.18
       env:
-        API-URL: sidhusaiprasanth.com
+        API_URL: sidhusaiprasanth.com
       ports:
         - 80
     steps:
       - run: |
           node -v
           cat /etc/os-release
-          echo $API-URL
+          echo $API_URL
