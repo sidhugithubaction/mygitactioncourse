@@ -39,6 +39,15 @@ jobs:
           name: CodeCoverage
           path: coverage
           retention-days: 10
+      - name: Download Coverage report
+        if: always()
+        uses: actions/download-artifact@v4
+        with:
+          name: CodeCoverage
+          path: code-cover-report
+      - run: ls -la
+      - run: ls -la
+        working-directory: code-cover-report
       - name: Install Dependencies
         run: npm install
       - name: Use Axios
